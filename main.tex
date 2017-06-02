@@ -10,7 +10,7 @@
 % modify this file as you see fit and even to delete this copyright
 % notice. 
 
-\documentclass{beamer}
+\documentclass[unknownkeysallowed]{beamer}
 
 % There are many different themes available for Beamer. A comprehensive
 % list with examples is given here:
@@ -111,14 +111,21 @@
 \subsection{First Subsection}
 
 \begin{frame}{First Slide Title}{Optional Subtitle}
+  
   \begin{itemize}
   \item {
     My first point.
   }
-  \item {
-    My second point.
-  }
   \end{itemize}
+  
+  \begin{figure}[H]
+    \centering
+    % Comando para colocar borda na imagem.
+    \includegraphics[width=.23\linewidth,frame]{Universe.jpg}
+    \caption{Legend.}
+    \label{fig:universe}
+  \end{figure}
+   
 \end{frame}
 
 \subsection{Second Subsection}
